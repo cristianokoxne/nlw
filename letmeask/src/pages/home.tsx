@@ -9,12 +9,12 @@ import{ auth, firebase} from '../services/firebase';
 
 import '../styles/auth.scss'
 import { Button } from '../components/Button';
-import { useContext } from 'react';
-import { AuthContext } from '../App';
+
+import { useAuth } from '../hooks/useAuth';
 
 export function Home(){
     const history = useHistory();
-    const {user, signInWithGoogle } = useContext(AuthContext)
+    const {user, signInWithGoogle } = useAuth()
 
     async  function handleCreateRoom(){
         if(!user){
