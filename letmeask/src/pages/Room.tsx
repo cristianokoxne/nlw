@@ -11,6 +11,31 @@ import { database } from '../services/firebase';
 type RoomParams ={
     id: string;
 }
+type FirebaseQuestions = Record<string, {
+    authur:{
+        name:string;
+        avatar: string;
+    }
+
+    content: string;
+    isAnswered: boolean;
+    isHighlighted: boolean;
+
+}>
+
+type Question ={
+   
+    id: string;
+    authur:{
+        name:string;
+        avatar: string;
+    }
+
+    content: string;
+    isAnswered: boolean;
+    isHighlighted: boolean;
+
+}
 
 export function Room(){
 
@@ -18,12 +43,30 @@ export function Room(){
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState ('');
     const roomId =  params.id;
+    const[questions, setQuestions] = useState<Question[]>([]);
+    const [title, setTitle] = useState('');
 
     useEffect(() => {
         const roomRef = database.ref(`rooms/${roomId}`);
 
         roomRef.once('value', room=>{
-                console.log(room.val());
+
+            const databaseRoom =room.val();
+            const firebaseQuestions: FirebaseQuestions = databaseRoom.questions ?? {};
+            
+            const parsedQuestions = Object.entries(firebaseQuestions ).map(([key, value]) =>{
+                return{
+                    id: key,
+                    content: value.content,
+                    authur: value.authur,
+                    isHighlighted: value.isHighlighted,
+                    isAnswered: value.isAnswered,
+                }
+                    
+            })
+
+            setTitle(databaseRoom.title);
+            setQuestions(parsedQuestions)
         })
     }, [roomId])
 
@@ -64,7 +107,7 @@ export function Room(){
             <main>
                 <div className="room-title">
                     <h1>sala react</h1>
-                    <span>4 perguntas</span>
+                    {questions.length>0 && <span>{questions.length} pergunta(s)</span>}
                 </div>
 
                 <form onSubmit={handleSendNewQuestion}>
