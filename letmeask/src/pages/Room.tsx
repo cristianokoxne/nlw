@@ -6,6 +6,7 @@ import '../styles/room.scss';
 import {useParams} from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth';
 import { database } from '../services/firebase';
+import { Question } from '../components/Question';
 
 
 type RoomParams ={
@@ -131,7 +132,16 @@ export function Room(){
                     </div>
                 </form>
 
+                {questions.map(question =>{
 
+                    return(
+                        <Question
+                            content={question.content}
+                            authur ={question.authur}
+                        
+                        />
+                    );
+                })} 
 
             </main>
         </div>
