@@ -1,8 +1,8 @@
-import'../styles/question.scss'
+import '../styles/question.scss';
 
 type QuestionProps={
     content: string;
-    authur:{
+    author:{
         name: string;
         avatar: string;
     }
@@ -12,16 +12,17 @@ type QuestionProps={
 
 export function Question({
     content,
-    authur,
+    author,
 }:QuestionProps){  
     return(
         <div className="question">
             <p>{content}</p>
             <footer>
                 <div className = "user-info">
-                    <img src={authur.avatar} alt={authur.name} />
-                    <span>{authur.name}</span>
+                    <img src={author.avatar} alt={author.name} />
+                   <div>{author.name}</div>
                 </div>
+                <div></div>
             </footer>
         </div>
     );

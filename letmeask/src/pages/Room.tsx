@@ -13,7 +13,7 @@ type RoomParams ={
     id: string;
 }
 type FirebaseQuestions = Record<string, {
-    authur:{
+    author:{
         name:string;
         avatar: string;
     }
@@ -27,7 +27,7 @@ type FirebaseQuestions = Record<string, {
 type Question ={
    
     id: string;
-    authur:{
+    author:{
         name:string;
         avatar: string;
     }
@@ -59,7 +59,7 @@ export function Room(){
                 return{
                     id: key,
                     content: value.content,
-                    authur: value.authur,
+                    author: value.author,
                     isHighlighted: value.isHighlighted,
                     isAnswered: value.isAnswered,
                 }
@@ -67,7 +67,7 @@ export function Room(){
             })
 
             setTitle(databaseRoom.title);
-            setQuestions(parsedQuestions)
+            setQuestions(parsedQuestions);
         })
     }, [roomId])
 
@@ -132,16 +132,20 @@ export function Room(){
                     </div>
                 </form>
 
+                <div className ="question-list">
                 {questions.map(question =>{
 
                     return(
                         <Question
+                            key={question.id}
                             content={question.content}
-                            authur ={question.authur}
+                            author ={question.author}
                         
                         />
                     );
-                })} 
+                    })} 
+
+                </div>
 
             </main>
         </div>
