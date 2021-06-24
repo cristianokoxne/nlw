@@ -13,7 +13,7 @@ import { useRoom } from '../hooks/useRoom';
 type RoomParams ={
     id: string;
 }
-export function Room(){
+export function AdminRoom(){
 
     const {user} =useAuth();
     const params = useParams<RoomParams>();
@@ -52,7 +52,12 @@ export function Room(){
             <header>
                 <div className ="content">
                     <img src={logoImg} alt="letmeask" />
-                    <RoomCode code = {roomId}></RoomCode>
+
+                    <div className = "div">
+                        <RoomCode code = {roomId}></RoomCode>
+                        <Button isOutlined>Encerrar sala</Button>
+                    </div>
+                    
                 </div>
             </header>
             <main>
@@ -60,27 +65,6 @@ export function Room(){
                     <h1>sala react</h1>
                     {questions.length>0 && <span>{questions.length} pergunta(s)</span>}
                 </div>
-
-                <form onSubmit={handleSendNewQuestion}>
-                    <textarea 
-                        placeholder ="O que voê quer perguntar?"
-                        onChange ={event => setNewQuestion(event.target.value)}
-                        value = {newQuestion}
-                    />
-                    <div className ="form-footer">
-                        {user ? (
-                            <div className = "user-info">
-                                 <img src={user.avatar} alt={user.name} />
-                                 <span>{user.name}</span>
-                            
-                            </div> 
-                        ) : (
-                            <span> Para Enviar uma pergunta, <button>faça seu login</button>.</span>
-                        ) }
-
-                        <Button type ="submit">Enviar pergunta</Button>
-                    </div>
-                </form>
 
                 <div className ="question-list">
                 {questions.map(question =>{
