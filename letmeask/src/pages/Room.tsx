@@ -24,7 +24,7 @@ type FirebaseQuestions = Record<string, {
 
 }>
 
-type Question ={
+type QuestionType ={
    
     id: string;
     author:{
@@ -44,7 +44,7 @@ export function Room(){
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState ('');
     const roomId =  params.id;
-    const[questions, setQuestions] = useState<Question[]>([]);
+    const[questions, setQuestions] = useState<QuestionType[]>([]);
     const [title, setTitle] = useState('');
 
     useEffect(() => {
