@@ -1,4 +1,4 @@
-# Let Me Ask
+##Let Me Ask
 
 ## Descrição 
 <p align="center">Projeto elaborado na NLW Together 🚀</p>
@@ -30,10 +30,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/tgmarinho/nlw1>
+$ git clone <https://github.com/cristianokoxne/nlw>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd nlw1
+$ cd nlw
 
 # Vá para a pasta server
 $ cd server
@@ -50,7 +50,7 @@ $ npm run dev:server
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Expo](https://expo.io/)
+- [Firebase](https://firebase.google.com)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
