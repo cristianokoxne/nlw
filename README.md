@@ -1,29 +1,27 @@
 ##
 
-<h1 align="center">LET ME ASK</h1>
+<h1 align="center">🔗 LET ME ASK 🔗</h1>
 
-## Descrição 
+## 
+<img src=""/>
+
+## 🚀 Descrição  
+
 <p align="center">Projeto elaborado na NLW Together 🚀</p>
 
 
-Tabela de conteúdos
-=================
+## 💻 Tabela de conteúdos
 <!--ts-->
-   * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Tests](#testes)
-   * [Tecnologias](#tecnologias)
+    ✅* [Aula 1 -> together ok]
+    ✅* [Aula 2 -> parei em 52 min -> unidade ok]
+    ✅* [Aula 3 -> parei em 1:09:00 horas  -> embuscadeevolução ok]
+    ✅* [Aula 4 -> parei em 17 min -> parei em 43 min -> legacy ok]
+    ✅* [aula 5 -> juntos no proximo nivel]
+      
 <!--te-->
 
 
-## Pré-requisitos
+## ⚙️ Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
@@ -48,7 +46,7 @@ $ npm run dev:server
 
 # O servidor inciará na porta:3333 - acesse <http://localhost:3333>
 ```
-### 🛠 Tecnologias
+## ⚒️ Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -64,11 +62,7 @@ Cristiano Konxe 🚀
 
 Feito com ❤️ por Cristiano Koxne 👋🏽 Entre em contato!
 
+
 Twitter Badge Linkedin Badge Gmail Badge
 
 
-aula 1 -> together ok
-aula 2 -> parei em 52 min -> unidade ok
-aula 3 -> parei em 1:09:00 horas  -> embuscadeevolução ok
-aula 4 -> parei em 17 min -> parei em 43 min -> legacy ok
-aula 5 -> juntos no proximo nivel
