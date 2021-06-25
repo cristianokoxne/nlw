@@ -63,7 +63,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Autor
 
-Cristiano Konxe 🚀
+Cristiano Koxne 🚀
 
 Feito com ❤️ por Cristiano Koxne 👋🏽 Entre em contato!
 
