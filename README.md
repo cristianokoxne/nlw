@@ -3,7 +3,12 @@
 <h1 align="center">🔗 LET ME ASK 🔗</h1>
 
 ## 
-<img src=""/>
+
+<div align="center">
+    <br>
+    <img src="./logo.svg"/>
+</div>
+
 
 ## 🚀 Descrição  
 
@@ -62,7 +67,8 @@ Cristiano Konxe 🚀
 
 Feito com ❤️ por Cristiano Koxne 👋🏽 Entre em contato!
 
+![Badge](https://img.shields.io/badge/Linkedin-blue)
 
-Twitter Badge Linkedin Badge Gmail Badge
+
 
 
