@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 
 <h1 align="center">LET ME ASK</kh1>
-## Descrição 
-=======
+
+
 ##
 
 <h1 align="center">🔗 LET ME ASK 🔗</h1>
@@ -17,7 +16,6 @@
 
 ## 🚀 Descrição  
 
->>>>>>> be1339566f48de79e4341d48449799b8f8e71ae1
 <p align="center">Projeto elaborado na NLW Together 🚀</p>
 
 
