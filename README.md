@@ -1,10 +1,4 @@
 
-
-## 🚀 Descrição  
-
-<p align="center">Projeto elaborado na NLW Together 🚀</p>
-
-
 ## 💻 Tabela de conteúdos
 <!--ts-->
     ✅* [Aula 1 -> together ok]
