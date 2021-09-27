@@ -1,13 +1,4 @@
 
-<h1 align="center">🔗 LET ME ASK 🔗</h1>
-
-## 
-
-<div align="center">
-    <br>
-    <img src="./logo.svg"/>
-</div>
-
 
 ## 🚀 Descrição  
 
